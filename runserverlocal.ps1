@@ -1,2 +1,2 @@
 dotnet build
-dotnet run --project ./src/TesteProxyReverso.Api/TesteProxyReverso.Api.csproj --launch-profile Local
+dotnet run --project ./src/ExemploProxyReverso.Api/ExemploProxyReverso.Api.csproj --launch-profile Local

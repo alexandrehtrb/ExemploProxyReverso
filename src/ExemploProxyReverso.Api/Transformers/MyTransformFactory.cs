@@ -1,6 +1,6 @@
 using Yarp.ReverseProxy.Transforms.Builder;
 
-namespace TesteProxyReverso.Api.Transformers;
+namespace ExemploProxyReverso.Api.Transformers;
 
 public class MyTransformFactory : ITransformFactory
 {

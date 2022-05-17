@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{163F49CF-E0E9-4D49-9112-D9B9E24255F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteProxyReverso.Api", "src\TesteProxyReverso.Api\TesteProxyReverso.Api.csproj", "{FF37C01E-2A60-4EC6-AD70-02035BA46B48}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExemploProxyReverso.Api", "src\ExemploProxyReverso.Api\ExemploProxyReverso.Api.csproj", "{FF37C01E-2A60-4EC6-AD70-02035BA46B48}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

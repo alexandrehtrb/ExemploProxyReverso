@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace TesteProxyReverso.Api.Controllers;
+namespace ExemploProxyReverso.Api.Controllers;
 
 /// <summary>
 /// Sample controller.

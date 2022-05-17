@@ -1,6 +1,6 @@
 using Serilog;
 
-namespace TesteProxyReverso.Api.Configurations;
+namespace ExemploProxyReverso.Api.Configurations;
 
 internal static class SerilogConfiguration
 {

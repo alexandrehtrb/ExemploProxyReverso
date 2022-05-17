@@ -1,7 +1,7 @@
 using System.Text;
 using Yarp.ReverseProxy.Transforms;
 
-namespace TesteProxyReverso.Api.Transformers;
+namespace ExemploProxyReverso.Api.Transformers;
 
 /// <summary>
 /// Custom request transformation

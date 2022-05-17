@@ -1,8 +1,8 @@
 using Serilog;
-using TesteProxyReverso.Api.Configurations;
-using TesteProxyReverso.Api.Transformers;
+using ExemploProxyReverso.Api.Configurations;
+using ExemploProxyReverso.Api.Transformers;
 
-namespace TesteProxyReverso.Api;
+namespace ExemploProxyReverso.Api;
 
 public static class Program
 {
