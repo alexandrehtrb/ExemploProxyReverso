@@ -12,13 +12,19 @@ public class CustomResponseTransform : ResponseTransform
 
     public CustomResponseTransform(string nome) => this.nome = nome;
 
-    public override ValueTask ApplyAsync(ResponseTransformContext context)
+    //https://github.com/microsoft/reverse-proxy/blob/main/docs/docfx/articles/transforms.md#response-body-transforms
+
+    public override async ValueTask ApplyAsync(ResponseTransformContext responseContext)
     {
-        var newContent = new StringContent("{\"nome\":\"" + nome + "\"}", Encoding.UTF8, "application/json");
-        if (context.ProxyResponse != null)
+        string newBody = "{\"nome\":\"" + nome + "\"}";
+        byte[] bytes = Encoding.UTF8.GetBytes(newBody);
+
+        if (responseContext.ProxyResponse is not null)
         {
-            context.ProxyResponse.Content = newContent;
+            responseContext.SuppressResponseBody = true;
+            responseContext.HttpContext.Response.ContentType = "application/json";
+            responseContext.HttpContext.Response.ContentLength = bytes.LongLength;
+            await responseContext.HttpContext.Response.Body.WriteAsync(bytes);
         }
-        return default;
     }
 }
