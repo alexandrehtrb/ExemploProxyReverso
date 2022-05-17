@@ -22,7 +22,7 @@ public class CustomResponseTransform : ResponseTransform
         if (responseContext.ProxyResponse is not null)
         {
             responseContext.SuppressResponseBody = true;
-            responseContext.HttpContext.Response.ContentType = "application/json";
+            responseContext.HttpContext.Response.ContentType = "application/json; charset=utf-8";
             responseContext.HttpContext.Response.ContentLength = bytes.LongLength;
             await responseContext.HttpContext.Response.Body.WriteAsync(bytes);
         }
