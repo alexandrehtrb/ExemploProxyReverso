@@ -1,4 +1,4 @@
-# TesteProxyReverso
+# ExemploProxyReverso
 
 Este projeto é um exemplo de proxy reverso usando [YARP](https://github.com/microsoft/reverse-proxy).
 
